@@ -10,11 +10,8 @@ public abstract class Conta {
 	private float saldo;
 
 	/*
-	 * Modificadores de acesso 
-	 * Private - Celular particular 
-	 * Protected - Telefone Residencial 
-	 * Public - Orelhão 
-	 * Default
+	 * Modificadores de acesso Private - Celular particular Protected - Telefone
+	 * Residencial Public - Orelhão Default
 	 */
 
 	// Método Especial - Método Construtor
@@ -62,13 +59,11 @@ public abstract class Conta {
 		return saldo;
 	}
 
-	
 	public boolean setSaldo(float saldo) {
 		this.saldo = saldo;
-		return true; 
+		return true;
 	}
 
-	
 	public boolean sacar(float valor) {
 		if (this.getSaldo() < valor) {
 			System.out.println("\nSaldo Insuficiente!");
@@ -76,11 +71,11 @@ public abstract class Conta {
 		}
 
 		this.setSaldo(this.getSaldo() - valor);
-		return true; 
+		return true;
 	}
 
 	public void depositar(float valor) {
-		this.setSaldo(this.getSaldo() + valor); 
+		this.setSaldo(this.getSaldo() + valor);
 	}
 
 	public void visualizar() {
